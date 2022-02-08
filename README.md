@@ -17,3 +17,11 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+### Pending Task : 
+
+1. Landing Page : Main Task , Write up and Bottom Page containing for partners.
+2. Team Page : Different page , photo and write up
+3. Blogs - News etc
+4. Documentation and guides [link directly to github wiki]
+
