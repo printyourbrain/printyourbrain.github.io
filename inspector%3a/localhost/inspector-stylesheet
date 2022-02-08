@@ -1,7 +1,0 @@
-a {}
-
-.footer-custom-content a {
-    display: inline-flex;
-    /* width: 10%; */
-    /* height: 100%; */
-}
