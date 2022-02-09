@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   We develop an Open Source data processing pipeline 
   by which T1 fMRI scans of brains could be 3D printed.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "printyourbrain.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://printyourbrain.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
