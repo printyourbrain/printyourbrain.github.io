@@ -30,7 +30,8 @@ github_username:
 
 # Build settings
 # theme: minima
-theme: beautiful-jekyll-theme
+# removed beautiful-jekyll-theme as it is now a regular theme
+# theme: beautiful-jekyll-theme
 plugins:
   - jekyll-feed
 
