@@ -11,8 +11,8 @@
 
   <title>Print Your Brain</title>
 
-  
-  <meta name="author" content="Sudeshna Bora">
+
+  <meta name="author" content="">
   
 
   <meta name="description" content="Online workshop to develop an Open Source data processing pipeline by which T1 fMRI scans of students’ brains could be 3D printed.">
@@ -47,17 +47,17 @@
 
   
     
-      <link rel="stylesheet" href="/css/bootstrap-social.css">
+      <link rel="stylesheet" href="css/bootstrap-social.css">
     
-      <link rel="stylesheet" href="/css/pyb.css">
+      <link rel="stylesheet" href="css/pyb.css">
     
   
 
   
     
-      <link rel="stylesheet" href="/css/demo.css">
+      <link rel="stylesheet" href="css/demo.css">
     
-      <link rel="stylesheet" href="/css/skin-switch.css">
+      <link rel="stylesheet" href="css/skin-switch.css">
     
   
 
@@ -73,22 +73,13 @@
   <meta property="og:description" content="Online workshop to develop an Open Source data processing pipeline by which T1 fMRI scans of students’ brains could be 3D printed.  ">
 
   
-  <meta property="og:image" content="/img/screenshot.png">
+  <meta property="og:image" content="img/screenshot.png">
   
 
   
   <meta property="og:type" content="website">
-
-  <meta property="og:url" content="/">
-  <link rel="canonical" href="/">
-  
-
-  
-  <meta name="twitter:card" content="summary_large_image">
-  
-  <meta name="twitter:site" content="@daattali">
-  <meta name="twitter:creator" content="@daattali">
-
+  <meta property="og:url" content="">
+  <link rel="canonical" href="">
   <meta property="twitter:title" content="Print Your Brain">
   <meta property="twitter:description" content="Online workshop to develop an Open Source data processing pipeline by which T1 fMRI scans of students’ brains could be 3D printed.  ">
 
@@ -127,7 +118,6 @@
                   <a class="dropdown-item" href="/examples">Teams</a>
             </div>
           </li>
-        
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
             <span id="nav-search-icon" class="fa fa-search"></span>
@@ -172,61 +162,18 @@
        \
         { \
           "title"    : "Data Processing", \
-          "category" : "test", \
-          "url"      : "data-processing.html", \
-          "date"     : "February 28, 2020" \
+          "category" : "processing", \
+          "url"      : "/data-processing/", \
+          "date"     : "January 27, 2022" \
         }, \
-       \
-        { \
-          "title"    : "Flake it till you make it", \
-          "category" : "bookstest", \
-          "url"      : "/2020-02-26-flake-it-till-you-make-it/", \
-          "date"     : "February 26, 2020" \
-        }, \
-       \
-       \
-        { \
-          "title"    : "Featured Users", \
-          "category" : "page", \
-          "url"      : "/examples/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
-        { \
-          "title"    : "FAQ", \
-          "category" : "page", \
-          "url"      : "/faq/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
-        { \
-          "title"    : "Getting started", \
-          "category" : "page", \
-          "url"      : "/getstarted/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
+        \
         { \
           "title"    : "Print Your Brain", \
           "category" : "page", \
           "url"      : "/", \
           "date"     : "January 1, 1970" \
         }, \
-       \
-        { \
-          "title"    : "Plans", \
-          "category" : "page", \
-          "url"      : "/plans/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
-        { \
-          "title"    : "Tag Index", \
-          "category" : "page", \
-          "url"      : "/tags/", \
-          "date"     : "January 1, 1970" \
-        }, \
-       \
+        \
         { \
           "title"    : "What&#39;s New?", \
           "category" : "page", \
@@ -264,11 +211,10 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Print Your Brain</h1>
+          <h1>Data Processing</h1>
           
             
-              <hr class="small">
-            
+              <hr class="small">            
           
 
           
@@ -288,62 +234,26 @@
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
 
-      <div class="main-explain-area jumbotron"><img src="img/Brain3.jpeg"/></div>
+      <div class="main-explain-area jumbotron"><img src="img/DataProcessing.jpeg"/></div>
 
 
 
 
 
 <div class="posts-list">
-  
-  <article class="post-preview">
+    <p>The data processing group is responsible for reconstructing raw structural MRI images into 3D printable mesh files. This focus group has tackled four major tasks:
+
+    </p><p>Data Preparation: the data is prepared in BIDS file format and quality control of the dataset is performed.
+    Artifact Correction: the surface of the brain is reconstructed from structural MRI using freesurfer and correction of artifacts is performed.
     
-
+    </p><p>Brain Part Parcellation: brain parts are generated and merged of brain parts. The brain part parcellation is responsible for making a 3D base format of the MRI scan and highlighting each hemisphere, part of the brain and merging it into one single file.
     
-
-    <a href="data-processing.html">
-      <h2 class="post-title">Data Processing
-    </h2>
-
-      
-        <h3 class="post-subtitle">
-          Explains the data processing step
-        </h3>
-      
-    </a>
-
-    <p class="post-meta">
-      
-      Posted on February 28, 2020
+    </p><p>Trimming the Brain: the parcellated brain is further processed and trimmed in open source 3D processing software (Meshlab).
+    
+    </p><p>Going forward, the team plans to create scripts, example data, 3D printable brain files, and guides in order to ensure that future students and other interested parties can easily 3D-print their own brains after acquiring a T1 fMRI scan of their brain. A preliminary guide for installing Freesurfer (software for processing T1 fMRI scans) for various operating systems and for completing a tutorial using the above modules will be available soon.
     </p>
-
     
-
-    
-    
-
-    <div class="post-entry">
-      
-      The data processing group is responsible for reconstructing raw structural MRI images into 3D printable mesh files.
-
-      
-      
-        <a href="data-processing.html" class="post-read-more">[Read&nbsp;More]</a>
-      
-    </div>
-    
-
-    
-    <div class="blog-tags">
-      <span>Tags:</span>
-      
-      <a href="#tags#processing">Processing</a>
-      
-    </div>
-    
-
-   </article>
-    
+  
 </div>
 
 
@@ -442,21 +352,9 @@
 
     
     </div>
-      <p class="copyright text-muted">
-      
-        PrintYourBrain
-        &nbsp;&bull;&nbsp;
-      
-      2022
-
-      
-        &nbsp;&bull;&nbsp;
-
-      
-      </p>
       <p class="theme-by text-muted">
         Powered by
-        <a href="">Beautiful Jekyll</a>
+        <a href="">Print Your Brain</a>
       </p>
       </div>
     </div>
