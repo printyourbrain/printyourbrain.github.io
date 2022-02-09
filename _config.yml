@@ -63,9 +63,9 @@ plugins:
 
 navbar-links:
   About PYB: "about-pyb"
+  Team: "team"
   Resources:
     - WIKI: "wiki"
-    - Team: "team"
 
 
 # --- Logo --- #
