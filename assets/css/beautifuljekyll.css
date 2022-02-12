@@ -111,6 +111,10 @@ img {
   max-width: 100%;
 }
 
+.memberpic {
+  height:  150px;
+}
+
 .linked-section {
   padding-top: 3.75rem;
   margin-top: -1.5625rem;
@@ -995,4 +999,57 @@ pre {
 .center {
   display: block;
   margin: 0 auto;
+}
+
+.team_row {
+  width: 100%;
+  display: inline-flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.team_row_h {
+  max-width: 20%;
+}
+
+.plan-card {
+  transition: all 0.42s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  margin: 0.1875rem;
+  box-shadow: 0 0.0625rem 0.125rem 0 rgb(22 45 61 / 10%);
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  color: #162d3d;
+  padding: 3rem 1.5rem 6.25rem;
+  cursor: default;
+  width: 30%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.plan-card:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  z-index: 5555 !important;
+  transform: scale(1.1);
+  box-shadow: 10px 5px 5px #eaeaea;
+}
+.col.member_block {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .team_row_h {
+    max-width: 100%;
+  }
+  .team_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .plan-card {
+    width: 100%;
+  }
 }
