@@ -62,11 +62,11 @@ plugins:
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About PYB: "about-pyb"
+  About: "about"
+  WIKI: "wiki"
+  Blog: "blog"
+  # GitHub: "https://github.com/printyourbrain/PrintYourBrain"
   Team: "team"
-  Resources:
-    - WIKI: "wiki"
-
 
 # --- Logo --- #
 
@@ -177,7 +177,7 @@ site-css:
   - "/assets/css/skin-switch.css"
   - "/assets/css/demo.css"
   - "/assets/css/custom.css"
-  - "/assets/css/pyb.css"
+  # - "/assets/css/pyb.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 site-js:

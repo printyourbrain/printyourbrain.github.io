@@ -6,4 +6,3 @@ layout: home
 title: "Print Your Brain"
 ---
 
-<div class="main-explain-area jumbotron"><img src="assets/img/Brain3.jpeg"/></div>

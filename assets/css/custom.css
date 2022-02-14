@@ -1,3 +1,96 @@
+:root {
+    --timeline-color: #eee9dc;
+    --white: #faf0e6;
+}
+
 .avatar-img {
     padding: .5rem;
 }
+
+#timeline {
+    list-style: none;
+    margin: 50px 0 30px 120px;
+    padding-left: 30px;
+    border-left: 8px solid var(--timeline-color);
+}
+#timeline .date {
+    font-weight: bold;
+    margin-top: -10px;
+    top: 50%;
+    left: -158px;
+    /* font-size: 0.95em; */
+    line-height: 20px;
+    position: absolute;
+}
+#timeline .circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -44px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 5px solid var(--timeline-color);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+#timeline .content {
+    border-color: var(--timeline-color);
+    margin-right: 20px;
+    transform: translateX(20px);
+    transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+    padding: 1rem;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5em;
+    position: relative;
+}
+#timeline .content:before, .content:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 100%;
+}
+#timeline .content:before {
+    border-right-color: var(--timeline-color);
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+.content:after {
+    border-right-color: white;
+    border-width: 17px;
+    top: 50%;
+    margin-top: -17px;
+}
+#timeline li {
+    margin: 40px 0;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    /* bar on the left, date and content both on the right */
+    #timeline {
+        margin: 0;
+        padding-left: 30px;
+        border-left: 8px solid var(--timeline-color);
+    }
+    #timeline .date {
+        position: inherit;
+        padding: .5rem 1rem;
+        transform: translateX(20px);
+        display: block;
+    }
+    #timeline .circle {
+        margin-top: 7px;
+    }
+}
+
+#timeline .content:hover {
+    z-index: 5555;
+    box-shadow: 10px 5px 5px #eaeaea;
+    transform: translate(20px, -5px) scale(1.01);
+  }

@@ -1,0 +1,37 @@
+---
+layout: page
+---
+
+
+
+{{ content }}
+<p>The Print Your Brain project was initiated in 2020 by Dr. T.T. Schmidt at the <a href="https://www.ewi-psy.fu-berlin.de/en/v/ccnb/index.html", target="_blank">Center for Cognitive Neuroscience (CCNB)</a>, Freie Universität Berlin. The project began as a team of students working online to develop an Open Source data processing pipeline by which T1 MRI scans of students' brains could be 3D printed. Since, students of Berlin-based Neuroscience schools join the project, participate in ongoing MRI-studies at the CCNB and get the possibility to obtain a 3D-print of their very own brain in original size in their hands.</p>
+
+<p>Within Print Your Brain, several focus groups were formed and students contributed with their individual skills, expertise, and passion to the project. The overall structure of the research group implements organization and management similar to small businesses or start-ups to explore how such efficient structures and project management can be applied and adapted to the academic world and to practice teamwork beyond the classical academic environment.
+</p>
+
+<p>Print Your Brain is an ongoing project that follows all principles of Open Science.
+</p>
+
+<br>
+
+<h2>Timeline of 3D-brain printing</h2>
+
+<ul id='timeline'>
+    {% assign entries = site.data.timeline 
+        | sort: "date" 
+        %}
+        {% for entry in entries %}
+        <li class='event'>
+            <div class="relative">
+                <span class='date'>{{entry.date}}</span>
+                <span class='circle'></span>
+            </div>
+            <div class='content'>
+                <span>
+                    {{entry.event}}
+                </span>
+            </div>
+        </li>            
+        {% endfor %}
+    </ul>
