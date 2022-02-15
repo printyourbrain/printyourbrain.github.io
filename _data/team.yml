@@ -4,6 +4,7 @@
     roles: Team leader
     photo: "../assets/img/Leader/TimoTSchmidt.jpg"
     website: "https://www.ewi-psy.fu-berlin.de/einrichtungen/arbeitsbereiche/neurocom_neuroimag/team/Postdocs/t_schmidt/index.html"
+
 - group: 2021
   members:
   - name: Anne Jellingshaus
@@ -20,6 +21,7 @@
     roles: Open science
     photo: "../assets/img/members/sudeshnaBora.jpeg"
     website: "https://sudeshna-bora.netlify.app/"
+    
 - group: 2020
   members:
   - name: Darshil Shah
