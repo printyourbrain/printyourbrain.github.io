@@ -55,6 +55,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# custom pages
+collections:
+  wiki: 
+    output: true
+    # permalink: /wiki/:path
+
 
 # From:
 # https://github.com/daattali/beautiful-jekyll/blob/master/_config.yml

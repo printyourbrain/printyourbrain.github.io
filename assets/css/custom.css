@@ -1,6 +1,5 @@
 :root {
     --timeline-color: #eee9dc;
-    --white: #faf0e6;
 }
 
 .avatar-img {
@@ -61,7 +60,7 @@
     margin-top: -20px;
 }
 .content:after {
-    border-right-color: white;
+    border-right-color: var(--white);
     border-width: 17px;
     top: 50%;
     margin-top: -17px;
