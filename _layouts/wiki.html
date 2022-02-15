@@ -5,8 +5,8 @@ layout: page
 {{content}}
 
 <div class="posts-list">
+    {% for wiki in site.wiki %}
     <article class="post-preview">
-        {% for wiki in site.wiki %}
         <a href="{{ wiki.url | absolute_url }}">
             <h2 class="post-title">{{ wiki.title }}</h2>
             {% if wiki.excerpt %}
