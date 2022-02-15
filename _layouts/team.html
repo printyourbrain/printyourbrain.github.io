@@ -1,0 +1,42 @@
+---
+layout: page
+---
+
+{{content}}
+
+{% assign team = site.data.team %}
+<div class=" container-fluid " role="main">
+    <div class="row">
+        <div class=" col ">
+            <div id="plans-container" class="container">
+                <div class="row">
+                    {% for group in team %}
+                    <div class="team_row">
+                        <h2 class="col team_row_h">{{ group.group }}</h2>
+                        {% assign members = group.members %}
+                        <div class="col member_block">
+                            {% for member in members %}
+                            <div class="plan-card">
+                                <figure>
+                                    <a href="{{ member.website }}" data-keyboard="true" target="_blank">
+                                        <img class="memberpic" src="{{ member.photo }}">
+                                    </a>
+                                    <figcaption>{{member.name}}</figcaption>
+                                    <figcaption style="color: gray;">{{member.roles}}</figcaption>
+                                </figure>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

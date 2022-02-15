@@ -1,0 +1,28 @@
+- group: Team Leader
+  members: 
+  - name: Timo Schmidt
+    roles: Team leader
+    photo: "../assets/img/Leader/TimoTSchmidt.jpg"
+    website: "https://www.ewi-psy.fu-berlin.de/einrichtungen/arbeitsbereiche/neurocom_neuroimag/team/Postdocs/t_schmidt/index.html"
+- group: 2021
+  members:
+  - name: Anne Jellingshaus
+    roles: 3D printing, Data processing
+    photo: "../assets/img/members/AnneJellinghaus.jpg"
+  - name: Jeehye An
+    roles: Open Source, Data Processing
+    photo: "../assets/img/members/JeehyeAn.jpg"
+    website: "https://anjeehye.github.io/anjeehye"
+  - name: Tim G
+    roles: 3D printing, processing
+    photo: "../assets/img/members/TimG.jpeg"
+  - name: Sudeshna Bora
+    roles: Open science
+    photo: "../assets/img/members/sudeshnaBora.jpeg"
+    website: "https://sudeshna-bora.netlify.app/"
+- group: 2020
+  members:
+  - name: Darshil Shah
+    roles: 
+    photo: "../assets/img/members/DarshilShah.jpg"
+    website: 
