@@ -92,4 +92,18 @@
     z-index: 5555;
     box-shadow: 10px 5px 5px #eaeaea;
     transform: translate(20px, -5px) scale(1.01);
-  }
+}
+
+/* WIKI */
+ul.wiki-list {
+    
+}
+.wiki-entry a {
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #404040;
+}
+.wiki-entry a:focus, .wiki-entry a:hover {
+    text-decoration: none;
+    color: #0085A1;
+}

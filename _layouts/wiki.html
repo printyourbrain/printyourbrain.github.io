@@ -4,24 +4,15 @@ layout: page
 
 {{content}}
 
-<div class="posts-list">
-    {% for wiki in site.wiki %}
-    <article class="post-preview">
-        <a href="{{ wiki.url | absolute_url }}">
-            <h2 class="post-title">{{ wiki.title }}</h2>
-            {% if wiki.excerpt %}
-            <p class="post-meta">
-                {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-                {{ wiki.date | date: date_format }}
-            </p>
-            <div class="post-entry">
-                {{ wiki.excerpt }}
-            </div>
-            {% endif %}
-        </a>
-    </article>
-    {% endfor %}
-</div>
-
-
+{% assign categories =  site.wiki | map: 'categories' | uniq %}
+{% for category in categories %}
+  <h3>{{ category }}</h3>
+  <ul class="wiki-list">
+  {% for wiki in site.wiki %}
+    {% if wiki.categories contains category %}
+    <li class="wiki-entry"><a href="{{ site.baseurl }}{{ wiki.url }}">{{ wiki.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
 
