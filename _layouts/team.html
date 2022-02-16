@@ -19,14 +19,16 @@ layout: page
                             <div class="plan-card">
                                 <figure>
                                     {% if member.website %}
-                                    <a href="{{ member.website }}" data-keyboard="true" target="_blank">
+                                    <a href="{{ member.website }}" data-keyboard="true" target="_blank" style="text-decoration: none;">
                                         <img class="memberpic" src="{{ member.photo }}">
+                                        <figcaption>{{member.name}}</figcaption>
+                                        <figcaption style="color: gray;">{{member.roles}}</figcaption>
                                     </a>
                                     {% else %}
                                     <img class="memberpic" src="{{ member.photo }}">
-                                    {% endif %}
                                     <figcaption>{{member.name}}</figcaption>
                                     <figcaption style="color: gray;">{{member.roles}}</figcaption>
+                                    {% endif %}
                                 </figure>
                             </div>
                             {% endfor %}
