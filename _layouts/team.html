@@ -16,19 +16,19 @@ layout: page
                         {% assign members = group.members %}
                         <div class="col member_block">
                             {% for member in members %}
-                            <div class="plan-card">
-                                <figure>
-                                    {% if member.website %}
-                                    <a href="{{ member.website }}" data-keyboard="true" target="_blank">
+                            {% if member.website %}
+                            <a class="plan-card" href="{{ member.website }}" data-keyboard="true" target="_blank">
+                            {% else %}
+                            <a class="plan-card" href="javascript: void(0)">
+                            {% endif %}
+                                    <div>
+                                    <figure>                                    
                                         <img class="memberpic" src="{{ member.photo }}">
-                                    </a>
-                                    {% else %}
-                                    <img class="memberpic" src="{{ member.photo }}">
-                                    {% endif %}
-                                    <figcaption>{{member.name}}</figcaption>
-                                    <figcaption style="color: gray;">{{member.roles}}</figcaption>
-                                </figure>
-                            </div>
+                                        <figcaption>{{member.name}}</figcaption>
+                                        <figcaption style="color: gray;">{{member.roles}}</figcaption>
+                                    </figure>
+                                </div>
+                            </a>
                             {% endfor %}
                         </div>
                     </div>
