@@ -69,7 +69,7 @@ collections:
 
 navbar-links:
   About: "about"
-  WIKI: "wiki"
+  WIKI: "https://github.com/printyourbrain/PrintYourBrain/wiki"
   Blog: "blog"
   # GitHub: "https://github.com/printyourbrain/PrintYourBrain"
   Team: "team"
