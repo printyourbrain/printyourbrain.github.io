@@ -140,3 +140,12 @@ var BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
+
+// open WIKI in new tab
+const openWikiNewTab = () => {
+  let wikiMenu = document.querySelector("a.WIKI");
+  if(wikiMenu) {
+    wikiMenu.target = "_blank";
+  }
+}
+openWikiNewTab();

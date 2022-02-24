@@ -71,7 +71,6 @@ navbar-links:
   About: "about"
   WIKI: "https://github.com/printyourbrain/PrintYourBrain/wiki"
   Blog: "blog"
-  # GitHub: "https://github.com/printyourbrain/PrintYourBrain"
   Team: "team"
 
 # --- Logo --- #
