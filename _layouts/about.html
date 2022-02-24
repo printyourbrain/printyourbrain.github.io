@@ -19,7 +19,7 @@ layout: page
 
 <ul id='timeline'>
     {% assign entries = site.data.timeline 
-        | sort: "date" 
+        | sort: "date"  | reverse
         %}
         {% for entry in entries %}
         <li class='event'>
