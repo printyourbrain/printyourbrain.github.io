@@ -1027,12 +1027,12 @@ pre {
   padding: 3rem 1.5rem 6.25rem;
   cursor: default;
   width: 30%;
-  /*-webkit-filter: grayscale(100%);*/ /* Safari 6.0 - 9.0 */
-  /* filter: grayscale(100%); */
+  -webkit-filter: grayscale(.3); /* Safari 6.0 - 9.0 */
+  filter: grayscale(.3);
 }
 .plan-card:hover {
-  /* filter: grayscale(0%); */
-  /* -webkit-filter: grayscale(0%); */
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
   z-index: 5555 !important;
   transform: scale(1.1);
   box-shadow: 10px 5px 5px #eaeaea;
